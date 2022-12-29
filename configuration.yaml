@@ -4,7 +4,9 @@ device_tracker:
   - platform: google_maps
     username: !secret presence_user
 
+sensor: !include sensors.yaml
 input_boolean: !include input_boolean.yaml
+input_number: !include input_number.yaml
 
 Follow the instructions on the HA website to setup the Google Maps integration ([link](https://www.home-assistant.io/integrations/google_maps/).
 Create a NEW and SEPARATE google account just for your HA setup (my personal account has 2fa enabled which will not work for this)

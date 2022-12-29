@@ -1,0 +1,11 @@
+A file for creating sensors will be needed too
+
+- platform: template
+  sensors:
+    people_home:
+      friendly_name: "# People Home"
+      value_template: >-
+        {{ states.person | map(attribute='state') | select('eq','home') | list | length }}
+
+This sensor will show the number of people home (including a guest) so there can be automations based on the numberof people home.
+I use this so I can have lights auto turn off when there is only one person in the house versus more than one.

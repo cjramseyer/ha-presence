@@ -1,0 +1,36 @@
+Add all of the following input booleans to your configuration (i use split up yaml files in my config)
+
+occupied:
+  name: Home Occupied
+  initial: off
+  icon: mdi:home
+himhome:
+  name: Him Home
+  initial: off
+  icon: mdi:account
+herhome:
+  name: Her Home
+  initial: off
+  icon: mdi:account
+kid1home:
+  name: Kid1 Home
+  initial: off
+  icon: mdi:account
+kid2home:
+  name: Kid2 Home
+  initial: off
+  icon: mdi:account
+houseguests:
+  name: House Guests
+  initial: off
+  icon: mdi:account-group
+vacation:
+  name: Vacation Mode
+  initial: off
+  icon: mdi:airplane
+
+Create an input_boolean for each individual you want to track, plus one for guests, and one to set the house for vacation mode.
+You can create as many as you need, and if you have any other presence related switches (maid/housekeeper, etc.)
+
+These will all get connected to the automation
+
